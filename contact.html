@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact</title>
+  <!--Favicon-->
+  <link rel="shortcut icon" href="img/favicon-16x16.png" type="img/favicon-16x16.png"/>
+  <!-- Reset the browser styling -->
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Kalam&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.production.css" type="text/css">
+</head>
+<body>
+  <header class="page-header">
+    <!-- Add a logo here -->
+    <img src="img/vjl.png" class="page-header__item" alt="VJ_logo">
+    <!--<img src="https://picsum.photos/300/100" alt="logo" class="page-header__item">-->
+    <nav class="main-navigation page-header__item">
+      <ul role="menubar" class="navigation-list">
+        <li role="presentation">
+          <a href="index.html" role="menuitem" class="navigation-list__item">Home</a>
+        </li>
+        <li role="presentation">
+          <a href="about.html" role="menuitem" class="navigation-list__item">About Me</a>
+        </li>
+        <li role="presentation">
+          <a href="work.html" role="menuitem" class="navigation-list__item">My Work</a>
+        </li>
+        <li role="presentation">
+          <a href="contact.html" role="menuitem" class="navigation-list__item navigation-list__item--active">Contact</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <!-- <div class="contact__body"> -->
+  <div class="contact__grid">
+    <div class="contact__grid-item mine">
+      <h1>My Contact!</h1>
+      <strong>Vijay Prasaad</strong><br>Philadelphia, PA<br><br>
+      <a href="tel:+13024423252"><img src="img/tel.svg" alt="telephone logo"></a>Cell Number<br>
+      <a href="skype:viprasakt"><img src="img/skype.svg" alt="skype logo"></a>Skype Id<br>
+      <a href="mailto:prasaad.vijay@gmail.com"><img src="img/email.svg" alt="email logo"></a>Email Id<br>
+    </div>
+    <div class="contact__grid-form">
+      <h1>Contact Me</h1>
+      <form action="#" method="post">
+        <div class="input-wrapper email">
+          <label for="emailId">E-mail:*</label><br>
+          <!-- id would position the cursor where the text need to be keyed -->
+          <!--<input class="keyin-box" type="email" id="contact-email" placeholder="example@email.com" required><br><br> -->
+          <input class="keyin-box" type="email" id="emailId" placeholder="example@email.com"><br>
+        </div>
+        <div class="input-wrapper phone">
+          <label for="tele">Telephone:</label>
+          <!--<input class="keyin-box" type="tel" id="contact-telephone" placeholder="xxx-xxx-xxxx" pattern="\d{3}[\-]\d{3}[\-]\d{4}"><br><br>-->
+          <input class="keyin-box" type="tel" id="tele" placeholder="##########" maxlength="10"><br>
+        </div>
+        <div class="input-wrapper msg">
+          <label class="standard-label" for="message">Message:*</label>
+          <!-- for more text space -->
+          <!--<textarea class="keyin-box" maxlength="55" id="contact-message" placeholder="Type your message..." required></textarea><br>-->
+          <textarea class="keyin-box" maxlength="55" id="message" placeholder="Type your message..."></textarea><br>
+          <!--input type="text" - is for less text-->
+        </div>
+        <div>
+          <input class="send-button" type="submit" value="Send Message">
+        </div>
+      </form>
+    </div>
+  </div>
+  <footer class="page-footer">
+    <p>Find me on</p>
+    <!--svg version="1.1" width="30px" height="30px" enable-background="new 0 0 48 48"-->
+    <div class="social-media">
+      <!-- Github logo -->
+      <a href="https://github.com/ktvprasaad" target="_blank"><img src="img/github_logo.svg" alt="github"></a>
+      <!-- Twitter logo -->
+      <!-- <img src="img/twitter_logo.svg" alt="twitter"> -->
+      <!-- LinkedIn logo -->
+      <a href="https://www.linkedin.com/in/vijayprasaad-kumarasamythiyagarajan-2969b218/" target="_blank"><img src="img/linkedin_logo.svg" alt="linkedin"></a>
+    </div>
+  </footer>
+  <!-- <script src="js/tota11y.min.js"></script> -->
+  <script src="js/scripts.js"></script>
+</body>
+</html>

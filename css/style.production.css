@@ -1,0 +1,622 @@
+/* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.26, autoprefixer: v9.7.3) */
+
+/* CSS variable declaration  :root (psuedo class) to target all the elements within the <HTML> */
+
+body {
+  /* Var() function to use the CSS variable declared under the pseudo class :root */
+  background-color: #b0d0b0;
+  font-family: 'Kalam', cursive;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1;
+}
+
+h1 {
+  font-size: 40px;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: ivory;
+}
+
+h3 {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+h4 {
+  font-size: 18px;
+  /* font-weight: var(--font-weight-700); */
+  color: #414141;
+  margin: 0em;
+}
+
+p {
+  /* letter-spacing: .08em;  */
+  line-height: 1.5em;
+  margin: 0 0 20px 0;
+}
+
+a {
+  color: #000;
+}
+
+span {
+  font-size: xx-large;
+}
+
+.navigation-list {
+  /* removes the dots (bullet) for the lists */
+  list-style-type: none;
+
+  /* takes the font from the outer container */
+  font-family: inherit;
+  background-color: inherit;
+  -webkit-transition-duration: 0.5s;
+       -o-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+  -webkit-transition-property: opacity;
+  -o-transition-property: opacity;
+  transition-property: opacity;
+
+  /* by default it is 'ease' if this property not specified */
+  -webkit-transition-timing-function: ease-in;
+       -o-transition-timing-function: ease-in;
+          transition-timing-function: ease-in;
+}
+
+.navigation-list li {
+  display: inline-block;
+  margin-left: 10px;
+}
+
+a:visited {
+  color: #800040;
+}
+
+a:hover,
+a:focus {
+  /* No underlining when hovering over a link */
+  text-decoration: none;
+}
+
+a:active {
+  color: #265340;
+}
+
+button {
+  /* overwrites the browser defaults and resets the border */
+  border: none;
+  display: inline-block;
+
+  /* takes the font from the outer container */
+  font-family: inherit;
+
+  /* styles the background color, font color, and text decoration (underline,etc.) of the button */
+  background-color: black;
+  color: white !important;
+  text-decoration: none;
+
+  /* add spacing to the button */
+  padding: 10px;
+  border-radius: 3px;
+
+  /* gives the button a botton border with a width of 2px, a type of solid, and a color in RGBA format */
+  border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+  -webkit-transition-duration: 0.5s;
+       -o-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+  -webkit-transition-property: opacity;
+  -o-transition-property: opacity;
+  transition-property: opacity;
+
+  /* by default it is 'ease' if this property not specified */
+  -webkit-transition-timing-function: linear;
+       -o-transition-timing-function: linear;
+          transition-timing-function: linear;
+
+  /* by default it is '0s' if this property not specified */
+
+  /* transition-delay: 1s; */
+}
+
+.button {
+  /* overwrites the browser defaults and resets the border */
+  border: none;
+  display: inline-block;
+
+  /* takes the font from the outer container */
+  font-family: inherit;
+
+  /* styles the background color, font color, and text decoration (underline,etc.) of the button */
+  background-color: black;
+  color: white !important;
+  text-decoration: none;
+
+  /* add spacing to the button */
+  padding: 10px;
+  border-radius: 3px;
+
+  /* gives the button a botton border with a width of 2px, a type of solid, and a color in RGBA format */
+  border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+  -webkit-transition-duration: 0.5s;
+       -o-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+  -webkit-transition-property: opacity;
+  -o-transition-property: opacity;
+  transition-property: opacity;
+
+  /* by default it is 'ease' if this property not specified */
+  -webkit-transition-timing-function: linear;
+       -o-transition-timing-function: linear;
+          transition-timing-function: linear;
+
+  /* by default it is '0s' if this property not specified */
+
+  /* transition-delay: 1s; */
+}
+
+.send-button {
+  /* overwrites the browser defaults and resets the border */
+  border: none;
+  display: inline-block;
+
+  /* takes the font from the outer container */
+  font-family: inherit;
+
+  /* styles the background color, font color, and text decoration (underline,etc.) of the button */
+  background-color: black;
+  color: white !important;
+  text-decoration: none;
+
+  /* add spacing to the button */
+  padding: 10px;
+  border-radius: 3px;
+
+  /* gives the button a botton border with a width of 2px, a type of solid, and a color in RGBA format */
+  border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+  -webkit-transition-duration: 0.5s;
+       -o-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+  -webkit-transition-property: opacity;
+  -o-transition-property: opacity;
+  transition-property: opacity;
+
+  /* by default it is 'ease' if this property not specified */
+  -webkit-transition-timing-function: linear;
+       -o-transition-timing-function: linear;
+          transition-timing-function: linear;
+
+  /* by default it is '0s' if this property not specified */
+
+  /* transition-delay: 1s; */
+}
+
+.send-button:hover,
+.send-button:focus,
+button:hover,
+button:focus,
+.button:hover,
+.button:focus {
+  /* let the mouse appear as a hand when hovering over the button */
+  cursor: pointer;
+
+  /* reduces the opacity of the button to 80% */
+  opacity: 0.90;
+}
+
+/* one more user defined class in BEM (Block Element Modifier) format */
+.navigation-list__item--active {
+  text-decoration: none;
+}
+
+.font__weight {
+  font-weight: bold;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.page-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  padding: 20px;
+}
+
+.page-header__item {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 125px;
+          flex: 0 1 125px;
+  height: 100%;
+  padding: 10px;
+}
+
+.page-header__item:last-child {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  text-align: right;
+}
+
+.portfolio__portrait {
+  float: left; /* image will be placed on left side with regard to the child item */
+  width: 400px;
+  max-width: 100%;
+  margin-right: 40px;
+  border-radius: 50%; /* for rounded image */
+}
+
+.page-footer {
+  clear: both; /* it clears all floats, both right & left */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; /* to change the layout of the social-media icons */
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; /* to position the elements in the flex container in column wise */
+  text-align: center; /* this would align the images as well */
+}
+
+.profile {
+  max-width: 700px;
+  margin: 0 auto; /* to center  the profile container */
+}
+
+.about__body {
+  max-width: 700px;
+  margin: 0 auto; /* to center  the profile container */
+  text-align: center;
+}
+
+.berlin-illustration {
+  max-width: 100%;
+}
+
+.skillset {
+  list-style-type: none; /* to remove the bullets from the list */
+}
+
+/* .contact__body { */
+.contact__grid {
+  display: -ms-grid;
+  display: grid;
+  padding: 20px;
+  -ms-grid-columns: 1fr 50px 2fr;
+  grid-template-columns: 1fr 2fr;
+  /* max-width: var(--max-width-700px); */
+  max-width: 1000px;
+  /* grid-gap: var(--grid-gap-20px); */
+  grid-gap: 50px;
+  margin: 0 auto; /* to center  the profile container */
+}
+
+.section__grid {
+  padding: 20px;
+}
+
+.grid {
+  display: -ms-grid;
+  display: grid;
+
+  /* fr - fraction - new unit for grid - using this would make the columns arrange themselves without hiding any content when we resize the broswer */
+  /* max-width: 1200px; */
+  -ms-grid-columns: 1fr 20px 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;  
+  /* margin: 0 auto; */
+
+  /* grid-template-columns: 300px 300px 300px; */
+
+  /* grid-template-rows: 300px 300px; */
+}
+
+.contact__grid-item {
+  line-height: 1.5;
+}
+
+.grid__item {
+  /* background-color: var(--grid-color); */
+  background: rgb(189,182,175);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(3%, rgba(1,12,61,1)), color-stop(50%, rgba(189,182,175,1)));
+  background: -o-linear-gradient(rgba(1,12,61,1) 3%, rgba(189,182,175,1) 50%);
+  background: linear-gradient(rgba(1,12,61,1) 3%, rgba(189,182,175,1) 50%);
+  /* padding: var(--padding-20px); */
+  padding: 40px;
+}
+
+.grid__item a {
+  margin-right: 20px;
+}
+
+.grid__item:nth-child(8) {
+  background:rgba(189,182,175,1);
+  /* background: linear-gradient(rgba(1,12,61,1) 3%, rgba(189,182,175,1) 50%); */
+  color: black;
+}
+
+.grid__item:nth-child(8) h2 {
+  color: #010c3d;
+  font-size: larger;
+}
+
+.grid__item:nth-child(8) a{
+  padding: 0 25px 0;
+  background-color: #010c3d;
+  font-size: x-large;
+  color: ivory;
+  text-decoration: none;
+}
+
+.grid__item:nth-child(8) a:hover {
+  color: #010c3d;
+  background-color: rgba(189,182,175,1);
+  border: 2px #010c3d solid;
+}
+
+.grid__image {
+  width: 500px;
+  /* height: 300px; */
+  max-width: 100%;
+  margin-bottom: 20px;  
+  /* justify-content: center; */
+}
+
+.mine {
+  color: #414141;
+}
+
+#skill {
+  color: black;
+  border-bottom: 2px #010c3d solid;
+}
+
+.contact__grid-form {
+  background-color: rgba(1,12,61,1);
+  color: ivory;
+  padding: 0 40px 20px;
+  display: block;
+}
+
+.input-wrapper {
+  padding: 10px;
+}
+
+.keyin-box {
+  background-color: #b0d0b0;
+  border-bottom: 1px solid rgba(1,12,61,1);
+}
+
+.send-button {
+  color: #010c3d !important;
+  background-color: coral;  
+}
+
+.send-button:hover,
+.send-button:focus { 
+  color: #010c3d !important;
+}
+
+.error-message {
+  color: grey;
+  font-weight: bold;
+  font-style: italic;
+  font-size: 16px;
+}
+
+@media all and (max-width: 500px) {
+  .portfolio__portrait {
+    /* float: left; /* image will be placed on left side with regard to the child item */
+    width: 400px;
+    max-width: 100%;
+    margin-right: 40px;
+    border-radius: 50%; /* for rounded image */
+  }
+
+  .grid,
+  .contact__grid {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+  }
+}
+
+@media all and (min-width: 500px) {
+  .grid__item:nth-child(6) {
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-area: 3/2/5/3;
+  }
+  .grid__item:nth-child(8) {
+    -ms-grid-row: 5;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: 5/1/6/3;
+  }
+}
+
+@media all and (min-width: 500px) and (max-width: 750px) {
+  .grid {
+    -ms-grid-columns: 1fr 20px 1fr;
+    grid-template-columns: 1fr 1fr;
+  }
+  .contact__grid {
+    -ms-grid-columns: 1fr 20px 1fr;
+    grid-template-columns: 1fr 1fr;
+  }
+  .grid__item:nth-child(6) {
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-area: 3/2/5/3;
+  }
+  .grid__item:nth-child(8) {
+    -ms-grid-row: 5;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: 5/1/6/3;
+  }
+}
+
+@media all and (max-width: 750px) {
+  .grid {
+    grid-gap: 20px;  
+  }
+  .contact__grid {
+    grid-gap: 20px;  
+  }
+
+  .grid__item,
+  .contact__grid-item,
+  .contact__grid-form {
+    grid-column: auto/auto;
+    grid-row: auto/auto;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+}
+
+@-webkit-keyframes logo-trans {
+  from {
+    -webkit-transform: scale(0.8, 0.8);
+            transform: scale(0.8, 0.8);
+  }
+
+  to {
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+  }
+}
+
+@keyframes logo-trans {
+  from {
+    -webkit-transform: scale(0.8, 0.8);
+            transform: scale(0.8, 0.8);
+  }
+
+  to {
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+  }
+}
+
+.page-header__item--trans {
+  -webkit-animation: 0.7s logo-trans infinite alternate linear;
+          animation: 0.7s logo-trans infinite alternate linear;
+}
+
+@-webkit-keyframes color-change {
+  0% {
+    fill: #edc655;
+  }
+
+  50% {
+    fill: #fcffad;
+  }
+
+  100% {
+    fill: #f76414;
+  }
+}
+
+@keyframes color-change {
+  0% {
+    fill: #edc655;
+  }
+
+  50% {
+    fill: #fcffad;
+  }
+
+  100% {
+    fill: #f76414;
+  }
+}
+
+/* .sun {
+animation-duration: 4s;
+animation-name: color-change;
+animation-iteration-count: infinite;
+animation-direction: alternate;
+animation-timing-function: linear;
+} */
+.sun {
+  -webkit-animation: 4s color-change infinite alternate linear;
+          animation: 4s color-change infinite alternate linear;
+}
+
+@-webkit-keyframes cloud-move {
+  /* to move the bigger cloud from left to right */
+  from {
+    -webkit-transform: translate(0, 50px);
+            transform: translate(0, 50px);
+  }
+
+  to {
+    -webkit-transform: translate(200px, 50px);
+            transform: translate(200px, 50px);
+  }
+}
+
+@keyframes cloud-move {
+  /* to move the bigger cloud from left to right */
+  from {
+    -webkit-transform: translate(0, 50px);
+            transform: translate(0, 50px);
+  }
+
+  to {
+    -webkit-transform: translate(200px, 50px);
+            transform: translate(200px, 50px);
+  }
+}
+
+.cloud-front {
+  -webkit-animation: 30s cloud-move infinite alternate linear;
+          animation: 30s cloud-move infinite alternate linear;
+}
+
+@-webkit-keyframes cloud-move-reverse {
+  /* to move the smaller cloud from left to right */
+  from {
+    -webkit-transform: translate(446px, 48px);
+            transform: translate(446px, 48px);
+  }
+
+  to {
+    -webkit-transform: translate(100px, 48px);
+            transform: translate(100px, 48px);
+  }
+}
+
+@keyframes cloud-move-reverse {
+  /* to move the smaller cloud from left to right */
+  from {
+    -webkit-transform: translate(446px, 48px);
+            transform: translate(446px, 48px);
+  }
+
+  to {
+    -webkit-transform: translate(100px, 48px);
+            transform: translate(100px, 48px);
+  }
+}
+
+.cloud-back {
+  -webkit-animation: 34s cloud-move-reverse infinite alternate linear;
+          animation: 34s cloud-move-reverse infinite alternate linear;
+}
