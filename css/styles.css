@@ -292,7 +292,6 @@ button:focus,
   text-align: center;
   padding: 0px;
   margin: 0px;
-  /* overflow: hidden; */
 }
 
 .contact__grid-item h1 {
@@ -380,12 +379,13 @@ button:focus,
   background-size: cover;
   opacity: 1;
 }
-
 .contact {
-  background: var(--tomato);
+  /* background: var(--tomato); */
+  background-image: url('../img/contact.png');
+  background-size: cover;
   color: rgba(1,12,61,1);
   text-decoration: none;
-  font-weight: bolder;
+  /* font-weight: bolder; */
 }
 
 .grid__item p {
@@ -394,7 +394,7 @@ button:focus,
 }
 
 .contact a {
-  font-size: 24px;
+  font-size: 20px;
   /* max-width: 100px; */
   text-decoration: none;
   cursor: pointer;
@@ -476,8 +476,8 @@ button:hover {
 @media all and (max-width: 500px) {
   body {
     padding: 1em;
-    overflow: hidden;
   }
+
   .portfolio__portrait {
     /* float: left; /* image will be placed on left side with regard to the child item */
     width: 400px;
@@ -515,6 +515,7 @@ button:hover {
     margin: 0;
     padding: 0;
     background: rgba(1,12,61,1) !important;
+    color: tomato !important;
     height: 100vh;
     list-style: none;
     font-weight: bold;
