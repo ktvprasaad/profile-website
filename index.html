@@ -11,15 +11,31 @@
   <!-- Kalam - one of the google fonts -->
   <link href="https://fonts.googleapis.com/css?family=Kalam&display=swap" rel="stylesheet">
   <!-- included css file for styling -->
-  <link rel="stylesheet" href="css/style.production.css" type="text/css">
+  <link rel="stylesheet" href="css/styles.css" type="text/css">
 </head>
 <body>
   <header class="page-header">
     <!-- Add a logo here -->
-    <img src="img/vjl.png" class="page-header__item page-header__item--trans" alt="VJ_logo">
+    <!-- <img src="img/vjl.png" class="page-header__item page-header__item--trans mylogo" alt="VJ_logo"> -->
+    <h1 id="/">ViJay</h1>
     <!--<img src="https://picsum.photos/300/100" alt="logo" class="page-header__item">-->
     <nav class="main-navigation page-header__item">
-      <ul role="menubar" class="navigation-list">
+      <svg class="menu" id="menu-btn" viewBox="0 0 27.329 17">
+        <g transform="translate(-415.671 -19)">
+            <line  x1="24.329" transform="translate(417.171 34.5)" fill="none" stroke="#000" stroke-linecap="round" stroke-width="3"></line>
+            <line x1="24.329" transform="translate(417.171 27.5)" fill="none" stroke="#000" stroke-linecap="round" stroke-width="3"></line>
+            <line x1="17" transform="translate(424.5 20.5)" fill="none" stroke="#000" stroke-linecap="round" stroke-width="3"></line>
+        </g>
+      </svg>
+      <ul role="menubar" class="navigation-list" id="nav">
+        <li class="exit" id="exit-btn">
+          <svg xmlns="http://www.w3.org/2000/svg" width="48.968" height="48.968" viewBox="0 0 48.968 48.968">
+              <g transform="translate(-378.092 -80.939)">
+                  <path id="Path_21" data-name="Path 21" d="M383,82l-46.847,46.847" transform="translate(43)" fill="none" stroke="#F08080" stroke-width="3"></path>
+                  <path id="Path_22" data-name="Path 22" d="M336.153,82l46.673,46.673" transform="translate(43)" fill="none" stroke="#F08080" stroke-width="3"></path>
+              </g>
+          </svg>
+        </li>
         <li role="presentation">
           <a href="index.html" role="menuitem" class="navigation-list__item navigation-list__item--active">Home</a>
         </li>
@@ -38,9 +54,9 @@
   <div class="profile">
     <!-- Add your portrait image here -->
     <img src="img/vj.png" class="portfolio__portrait" alt="Vj's Portrait Image">
-    <h1>Hello World!!</h1>
+    <h1>Good Day!!</h1>
     <!-- <span> - to avoid any line breaks -->
-    <p>I'm VJ. A <span>Web</span> Developer from the United States!</p>
+    <p>I'm Vijay Prasaad, a budding Web Developer, with a <span>passion</span> to blossom my creativity in the Web World.</p>
     <a href="work.html">Check out some of my work</a>
   </div>
   <footer class="page-footer">
@@ -50,12 +66,15 @@
       <!-- Github logo -->
       <a href="https://github.com/ktvprasaad" target="_blank"><img src="img/github_logo.svg" alt="github"></a>
       <!-- Twitter logo -->
-      <!-- <img src="img/twitter_logo.svg" alt="twitter"> -->
+      <a href="https://twitter.com/VijayPrasaadKT" target="_blank"><img src="img/twitter_logo.svg" alt="twitter"></a>
       <!-- LinkedIn logo -->
       <a href="https://www.linkedin.com/in/vijayprasaad-kumarasamythiyagarajan-2969b218/" target="_blank"><img src="img/linkedin_logo.svg" alt="linkedin"></a>
+      <!-- Medium logo -->
+      <a href="https://medium.com/@prasaad.vijay/" target="_blank"><img src="img/medium_logo.svg" alt="medium"></a>
     </div>
   </footer>
   <!-- Accessibility checker and to find errors -->
   <!-- <script src="js/tota11y.min.js"></script> -->
+  <script src="js/index.js"></script>
 </body>
 </html>

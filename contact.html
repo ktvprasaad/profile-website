@@ -14,10 +14,26 @@
 <body>
   <header class="page-header">
     <!-- Add a logo here -->
-    <img src="img/vjl.png" class="page-header__item" alt="VJ_logo">
+    <!-- <img src="img/vjl.png" class="page-header__item page-header__item--trans mylogo" alt="VJ_logo"> -->
+    <h1>ViJay</h1>
     <!--<img src="https://picsum.photos/300/100" alt="logo" class="page-header__item">-->
     <nav class="main-navigation page-header__item">
-      <ul role="menubar" class="navigation-list">
+      <svg class="menu" id="menu-btn" viewBox="0 0 27.329 17">
+        <g transform="translate(-415.671 -19)">
+            <line  x1="24.329" transform="translate(417.171 34.5)" fill="none" stroke="#000" stroke-linecap="round" stroke-width="3"></line>
+            <line x1="24.329" transform="translate(417.171 27.5)" fill="none" stroke="#000" stroke-linecap="round" stroke-width="3"></line>
+            <line x1="17" transform="translate(424.5 20.5)" fill="none" stroke="#000" stroke-linecap="round" stroke-width="3"></line>
+        </g>
+      </svg>
+      <ul role="menubar" class="navigation-list" id="nav">
+        <li class="exit" id="exit-btn">
+          <svg xmlns="http://www.w3.org/2000/svg" width="48.968" height="48.968" viewBox="0 0 48.968 48.968">
+              <g transform="translate(-378.092 -80.939)">
+                  <path id="Path_21" data-name="Path 21" d="M383,82l-46.847,46.847" transform="translate(43)" fill="none" stroke="#F08080" stroke-width="3"/>
+                  <path id="Path_22" data-name="Path 22" d="M336.153,82l46.673,46.673" transform="translate(43)" fill="none" stroke="#F08080" stroke-width="3"/>
+              </g>
+          </svg>
+        </li>
         <li role="presentation">
           <a href="index.html" role="menuitem" class="navigation-list__item">Home</a>
         </li>
@@ -34,54 +50,67 @@
     </nav>
   </header>
   <!-- <div class="contact__body"> -->
-  <div class="contact__grid">
-    <div class="contact__grid-item mine">
-      <h1>My Contact!</h1>
-      <strong>Vijay Prasaad</strong><br>Philadelphia, PA<br><br>
-      <a href="tel:+13024423252"><img src="img/tel.svg" alt="telephone logo"></a>Cell Number<br>
-      <a href="skype:viprasakt"><img src="img/skype.svg" alt="skype logo"></a>Skype Id<br>
-      <a href="mailto:prasaad.vijay@gmail.com"><img src="img/email.svg" alt="email logo"></a>Email Id<br>
+  <section class="contact__grid">
+    <div class="contact__grid-item">
+      <h1>Glad that you are here. <span>Let's teamup!!</span> You can reach me thru any of my personal details!</h1>
     </div>
-    <div class="contact__grid-form">
+    <div class="contact__grid-item ids">
+      <a href="tel:+13024423252">Telelphone</a><br>
+      <a href="skype:viprasakt">Skype</a><br>
+      <a href="mailto:prasaad.vijay@gmail.com">Email</a><br>
+    </div>
+    <div class="contact__grid-item">
+      <img src="img/letswork.png" alt="Contact">
+      <!-- <strong>Vijay Prasaad</strong><br>Philadelphia, PA<br><br> -->
+    </div>
+  </section>
+
+  <!-- <div><a href="tel:+13024423252"><img src="img/tel.svg" alt="telephone logo"></a><br></div>
+  <div><a href="skype:viprasakt"><img src="img/skype.svg" alt="skype logo"></a><br></div>
+  <div><a href="mailto:prasaad.vijay@gmail.com"><img src="img/email.svg" alt="email logo"></a><br></div> -->
+    <!-- <div class="contact__grid-form">
       <h1>Contact Me</h1>
       <form action="#" method="post">
         <div class="input-wrapper email">
-          <label for="emailId">E-mail:*</label><br>
+          <label for="emailId">E-mail:*</label><br> -->
           <!-- id would position the cursor where the text need to be keyed -->
           <!--<input class="keyin-box" type="email" id="contact-email" placeholder="example@email.com" required><br><br> -->
-          <input class="keyin-box" type="email" id="emailId" placeholder="example@email.com"><br>
+          <!-- <input class="keyin-box" type="email" id="emailId" placeholder="example@email.com"><br>
         </div>
         <div class="input-wrapper phone">
-          <label for="tele">Telephone:</label>
+          <label for="tele">Telephone:</label> -->
           <!--<input class="keyin-box" type="tel" id="contact-telephone" placeholder="xxx-xxx-xxxx" pattern="\d{3}[\-]\d{3}[\-]\d{4}"><br><br>-->
-          <input class="keyin-box" type="tel" id="tele" placeholder="##########" maxlength="10"><br>
+          <!-- <input class="keyin-box" type="tel" id="tele" placeholder="##########" maxlength="10"><br>
         </div>
         <div class="input-wrapper msg">
-          <label class="standard-label" for="message">Message:*</label>
+          <label class="standard-label" for="message">Message:*</label> -->
           <!-- for more text space -->
           <!--<textarea class="keyin-box" maxlength="55" id="contact-message" placeholder="Type your message..." required></textarea><br>-->
-          <textarea class="keyin-box" maxlength="55" id="message" placeholder="Type your message..."></textarea><br>
+          <!-- <textarea class="keyin-box" maxlength="55" id="message" placeholder="Type your message..."></textarea><br> -->
           <!--input type="text" - is for less text-->
-        </div>
+        <!-- </div>
         <div>
           <input class="send-button" type="submit" value="Send Message">
         </div>
       </form>
     </div>
-  </div>
+  </div> -->
   <footer class="page-footer">
-    <p>Find me on</p>
+    <p>You may also find me on</p>
     <!--svg version="1.1" width="30px" height="30px" enable-background="new 0 0 48 48"-->
     <div class="social-media">
       <!-- Github logo -->
       <a href="https://github.com/ktvprasaad" target="_blank"><img src="img/github_logo.svg" alt="github"></a>
       <!-- Twitter logo -->
-      <!-- <img src="img/twitter_logo.svg" alt="twitter"> -->
+      <a href="https://twitter.com/VijayPrasaadKT" target="_blank"><img src="img/twitter_logo.svg" alt="twitter"></a>
       <!-- LinkedIn logo -->
       <a href="https://www.linkedin.com/in/vijayprasaad-kumarasamythiyagarajan-2969b218/" target="_blank"><img src="img/linkedin_logo.svg" alt="linkedin"></a>
+      <!-- Medium logo -->
+      <a href="https://medium.com/@prasaad.vijay/" target="_blank"><img src="img/medium_logo.svg" alt="medium"></a>
     </div>
   </footer>
   <!-- <script src="js/tota11y.min.js"></script> -->
-  <script src="js/scripts.js"></script>
+  <script src="js/index.js"></script>
+  <!-- <script src="js/scripts.js"></script> -->
 </body>
 </html>

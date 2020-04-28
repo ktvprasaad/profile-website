@@ -50,23 +50,23 @@
 		return true;
 	}
 
-function showErrorMessage($input, message) {
-  var $container = $input.parentElement; // The .input-wrapper
+	function showErrorMessage($input, message) {
+	  var $container = $input.parentElement; // The .input-wrapper
 
-  // Remove an existing error
-  var error = $container.querySelector('.error-message');
-  if (error) {
-    $container.removeChild(error);
-  }
+	  // Remove an existing error
+	  var error = $container.querySelector('.error-message');
+	  if (error) {
+	    $container.removeChild(error);
+	  }
 
-  // Now add the error if the message isn’t empty
-  if (message) {
-    var error = document.createElement('div');
-    error.classList.add('error-message');
-    error.innerText = message;
-    $container.appendChild(error);
-  }
-}
+	  // Now add the error if the message isn’t empty
+	  if (message) {
+	    var error = document.createElement('div');
+	    error.classList.add('error-message');
+	    error.innerText = message;
+	    $container.appendChild(error);
+	  }
+	}
 
 	function validForm(){
 		var isValidEmail = validateEmail();

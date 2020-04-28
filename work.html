@@ -11,15 +11,31 @@
   <!-- Kalam - one of the google fonts -->
   <link href="https://fonts.googleapis.com/css?family=Kalam&display=swap" rel="stylesheet">
   <!-- included css file for styling -->
-  <link rel="stylesheet" href="css/styles.css" type="text/css">
+  <link rel="stylesheet" href="css/style.production.css" type="text/css">
 </head>
 <body>
   <header class="page-header">
     <!-- Add a logo here -->
-    <img src="img/vjl.png" class="page-header__item" alt="VJ_logo">
+    <!-- <img src="img/vjl.png" class="page-header__item page-header__item--trans mylogo" alt="VJ_logo"> -->
+    <h1>ViJay</h1>
     <!--<img src="https://picsum.photos/300/100" alt="logo" class="page-header__item">-->
     <nav class="main-navigation page-header__item">
-      <ul role="menubar" class="navigation-list">
+      <svg class="menu" id="menu-btn" viewBox="0 0 27.329 17">
+        <g transform="translate(-415.671 -19)">
+            <line  x1="24.329" transform="translate(417.171 34.5)" fill="none" stroke="#000" stroke-linecap="round" stroke-width="3"/>
+            <line x1="24.329" transform="translate(417.171 27.5)" fill="none" stroke="#000" stroke-linecap="round" stroke-width="3"/>
+            <line x1="17" transform="translate(424.5 20.5)" fill="none" stroke="#000" stroke-linecap="round" stroke-width="3"/>
+        </g>
+      </svg>
+      <ul role="menubar" class="navigation-list" id="nav">
+        <li class="exit" id="exit-btn">
+          <svg xmlns="http://www.w3.org/2000/svg" width="48.968" height="48.968" viewBox="0 0 48.968 48.968">
+              <g transform="translate(-378.092 -80.939)">
+                  <path id="Path_21" data-name="Path 21" d="M383,82l-46.847,46.847" transform="translate(43)" fill="none" stroke="#F08080" stroke-width="3"/>
+                  <path id="Path_22" data-name="Path 22" d="M336.153,82l46.673,46.673" transform="translate(43)" fill="none" stroke="#F08080" stroke-width="3"/>
+              </g>
+          </svg>
+        </li>
         <li role="presentation">
           <a href="index.html" role="menuitem" class="navigation-list__item">Home</a>
         </li>
@@ -39,106 +55,33 @@
   <section class="section__grid">
     <h1>My Projects</h1>
     <div class="grid">
-      <div class="grid__item">
-        <h2>Pokemon App</h2>
-        <img class="grid__image" src="img/pokedex.png" alt="pokedex image">
-        <h4>Description</h4>
-        <p>Developed a pokedex app which basically uses public api to show it to the users.</p>
-        <h4>Objective</h4>
-        <p>To help the user to view their pokemon characters and their detailed information thru Modal.</p>
-        <h4>Technologies Incorporated</h4>
-        <p>HTML, CSS, JavaScript, DOM, Ajax, Asychronous concept in order to perform any actions without having to wait for the 
-          the tasks to completion, jQuery and Bootstrap Libraries for reduce development work, perhaps to avoid re-inventing the wheel.</p>
-        <a href="https://github.com/ktvprasaad/pokedex-js-app" target="_blank">GitHub</a>
-        <a href="https://ktvprasaad.github.io/pokemon-app-jQuery/" target="_blank">Web-Page</a>
-        <a href="https://ktvprasaad.github.io/breeds/" target="_blank">For-Dog-Lovers!</a>
+      <div class="grid__item movie">
+        <h2>WebFlix</h2>
+        <p>JavaScript & React.</p>
+        <a href="https://webflix-api-2019.herokuapp.com/client/" target="_blank">Visit Site -></a>
       </div>
-      <div class="grid__item">
-        <h2>Movie API</h2>
-        <img class="grid__image" src="img/webFlixAPI.png" alt="movie API image">
-        <h4>Description</h4>
-        <p>Developed movie API, which provides the details of what the information available under movie API and 
-          how to access them thru various endpoint.
-        </p>
-        <h4>Objective</h4>
-        <p>To help the user to make use of the movie api to get any details of the movies.</p>
-        <h4>Technologies Incorporated</h4>
-        <p>MERN Stack - Express, Node.js, REST API, MongoDB.</p>
-        <a href="https://github.com/ktvprasaad/movie_api" target="_blank">GitHub</a>
-        <a href="https://webflix-api-2019.herokuapp.com/documentation.html" target="_blank">Web-Page</a>
+      <div class="grid__item meet">
+        <h2>MeetUp</h2>
+        <p>JavaScript, React, Serverless functions, PWA and Data Visualization.</p>
+        <a href="https://ktvprasaad.github.io/meetup/" target="_blank">Visit Site -></a>
       </div>
-      <div class="grid__item">
-        <h2>WebFlix - Movie App</h2>
-        <img class="grid__image" src="img/webFlixC.png" alt="WebFlix image">
-        <h4>Description</h4>
-        <p>Developed an app called 'webFlix', which allows the user to signup/signin to view the list of movies,
-          allows the users to add/remove their favorite lists. Allows to update their profile and also to unregiser from the app.
-        </p>
-        <h4>Objective</h4>
-        <p>To help the user to view their favorite movies based on genres or directors and maintain their favorite list of movies under their 
-          profile.</p>
-        <h4>Technologies Incorporated</h4>
-        <p>JavaScript, React framework, Virtual DOM concept.</p>
-        <a href="https://github.com/ktvprasaad/movie_api" target="_blank">GitHub</a>
-        <a href="https://webflix-api-2019.herokuapp.com/client/" target="_blank">WebFlix-Site</a>
+      <div class="grid__item quiz">
+        <h2>Quiz</h2>
+        <p>Typescript, Angular & Material Design.</p>
+        <a href="https://ktvprasaad.github.io/quizApp/welcome" target="_blank">Visit Site -></a>
       </div>
-      <div class="grid__item">
-        <h2>MeetUp App</h2>
-        <img class="grid__image" src="img/meetup.png" alt="Meetup">
-        <h4>Description</h4>
-        <p>Meetup is an app to view the events in your desired city and it can be downloaded to your desktop or mobile!</p>
-        <h4>Objective</h4>
-        <p>To view the events in the city with a graphical display about the number of events in the next 7 days and followed by each event details.</p>
-        <h4>Technologies & Methodologies Used</h4>
-        <p>It is a Create-React-App, developed thru Test-Driven Development, Behavior-Driven Development approach and tested using Jest, 
-          Jest, Cucumber & Puppeteer frameworks. It has been designed and developed with Advanced Development concepts such as Serverless functions using AWS Cloud provider,
-          Progressive Web App and Data Visualization.   
-        </p>
-        <a href="https://github.com/ktvprasaad/meetup" target="_blank">GitHub</a>
-        <a href="https://ktvprasaad.github.io/meetup/" target="_blank">App-Site</a>
-      </div>
-      <div class="grid__item">
-        <h2>Quiz App</h2>
-        <img class="grid__image" src="img/quiz.png" alt="quiz image">
-        <h4>Description</h4>
-        <p>Developed an app 'quizApp', which enables to choose the topic on which the user wants to test his/her 
-          skill thru multiple choice questions.</p>
-        <h4>Objective</h4>
-        <p>To help the user to take the quiz on the field of interest and view the results.</p>
-        <h4>Technologies Incorporated</h4>
-        <p>Typescript, Angular framework & Material Design.</p>
-        <a href="https://github.com/ktvprasaad/quizApp" target="_blank">GitHub</a>
-        <a href="https://ktvprasaad.github.io/quizApp/welcome" target="_blank">App-Site</a>
-      </div>
-      <div class="grid__item">
-        <h2>Zchat App</h2>
-        <img class="grid__image" src="img/zchat.png" alt="Zchat">
-        <h4>Description</h4>
-        <p>Zchat is a React Native Mobile app</p>
-        <h4>Objective</h4>
-        <p>To chat on just a single click both on ios and android devices!.</p>
-        <h4>Technologies & Methodologies Used</h4>
-        <p>It is a React Native Mobile App, developed thru Gifted Chat library and Google's Firebase database. Have incorporated Agile Methodologies -          
-          Kanban board thru out this app development.</p>
-        <a href="https://github.com/ktvprasaad/Zchat" target="_blank">GitHub</a>
-        <a href="https://trello.com/b/9ZJadBzU/hello-world-app" target="_blank">Kanban Board</a>
-      </div>
-      <div class="grid__item">
-        <h2>Todo App</h2>
-        <img class="grid__image" src="img/todo.png" alt="todoApp image">
-        <h4>Description</h4>
-        <p>Developed an app 'todo', which enables to add list of tasks to your todo list. 
-          Mark it complete and delete from the list.</p>
-        <h4>Objective</h4>
-        <p>To help the user to keep track of your goals thru todo app.</p>
-        <h4>Technologies Incorporated</h4>
+      <div class="grid__item todo">
+        <h2>Todo</h2>
         <p>Vue.js framework & Material Design.</p>
-        <a href="https://github.com/ktvprasaad/todo" target="_blank">GitHub</a>
-        <a href="https://ktvprasaad.github.io/todo/" target="_blank">App-Site</a>
+        <a href="https://ktvprasaad.github.io/todo/" target="_blank">Visit Site -></a>
       </div>
-      <div class="grid__item">
+      <div class="grid__item dog">
+        <h2>Breeds</h2>
+        <p>JavaScript, DOM, Ajax, jQuery & Bootstrap.</p>
+        <a href="https://ktvprasaad.github.io/breeds/" target="_blank">Visit Site -></a>
+      </div>
+      <div class="grid__item contact">
         <h2>Looking for a Professional Web Developer?</h2>
-        <p>I can help in realizing front-end and back-end projects in the skillsets => MERN, React.js, JavaScript, jQuery, Serverless functions and Progressive Web App.</p>
         <a href="contact.html">Contact me</a>
       </div>
     </div>
@@ -151,12 +94,15 @@
       <!-- Github logo -->
       <a href="https://github.com/ktvprasaad" target="_blank"><img src="img/github_logo.svg" alt="github"></a>
       <!-- Twitter logo -->
-      <!-- <img src="img/twitter_logo.svg" alt="twitter"> -->
+      <a href="https://twitter.com/VijayPrasaadKT" target="_blank"><img src="img/twitter_logo.svg" alt="twitter"></a>
       <!-- LinkedIn logo -->
       <a href="https://www.linkedin.com/in/vijayprasaad-kumarasamythiyagarajan-2969b218/" target="_blank"><img src="img/linkedin_logo.svg" alt="linkedin"></a>
+      <!-- Medium logo -->
+      <a href="https://medium.com/@prasaad.vijay/" target="_blank"><img src="img/medium_logo.svg" alt="medium"></a>
     </div>
   </footer>
   <!-- Accessibility checker and to find errors -->
   <!-- <script src="js/tota11y.min.js"></script> -->
+  <script src="js/index.js"></script>
 </body>
 </html>
