@@ -236,7 +236,7 @@ button:focus,
   max-width: 100%;
   margin-right: 40px;
   border-radius: 50%; /* for rounded image */
-}
+} 
 
 .page-footer {
   clear: both; /* it clears all floats, both right & left */
@@ -274,9 +274,10 @@ button:focus,
   display: grid;
   grid-template-columns: 1fr 1fr;
   justify-items: center;
-  justify-content: space-around;
+  /* justify-content: space-around; */
   padding: var(--pixel-20px);
   margin: var(--margin-center); /* to center  the profile container */
+  width: 100%;
 }
 
 .contact__grid-item:nth-child(2) {
@@ -287,7 +288,7 @@ button:focus,
 }
 
 .contact__grid-item:nth-child(3) {
-  width: auto;
+  width: 90%;
   grid-area: 1/2/3/3;
   text-align: center;
   padding: 0px;
@@ -299,8 +300,8 @@ button:focus,
   border-left: 5px rgba(1,12,61,1) solid;
   max-width: 650px;
   justify-content: left;
-  /* padding-left: 20px;
-  margin-top: 0px; */
+  padding: var(--pixel-20px);
+  /* margin-top: 0px; */
 }
 
 .contact__grid-item a {
@@ -314,15 +315,6 @@ button:focus,
   margin: var(--pixel-10px);
   padding: 0em 2em;
   align-self: center;
-}
-
-.right-col {
-  position: absolute;
-  top: 5em;
-  right: 1.4em;
-  justify-content: center;
-  background-size: cover;
-  z-index: -1;
 }
 
 .section__grid {
@@ -486,8 +478,7 @@ button:hover {
     border-radius: 50%; /* for rounded image */
   }
 
-  .grid,
-  .contact__grid {
+  .grid {
     grid-template-columns: 1fr;
   }
 
@@ -566,11 +557,14 @@ button:hover {
   .contact__grid {
     display: block;
     align-items: center;
+    /* margin: 1em; */
+    align-self: center;
   }
 
   .contact__grid h1 {
     text-align: center;
     border: none;
+    /* margin-bottom: em; */
   }
   
   .contact__grid-item a {
@@ -579,8 +573,6 @@ button:hover {
     text-align: center;
     padding: 0;
     margin: 0;
-    /* width: 100%; */
-    align-items: center;
   } 
 
   .contact__grid-item:nth-child(2) {
@@ -592,10 +584,8 @@ button:hover {
   .contact__grid-item:nth-child(3) {
     display: unset;
     position: absolute;
-    height: 100vh;
     top: 0;
     left: 0;
-    /* width: 98; */
     z-index: -1;
     opacity: .42;
   }
@@ -701,15 +691,15 @@ button:hover {
 
 @keyframes color-change {
   0% {
-    fill: var(--kf-sun-color-1);
+    fill: black !important;
   }
 
   50% {
-    fill: var(--kf-sun-color-2);
+    fill: green !important;
   }
 
   100% {
-    fill: var(--kf-sun-color-3);
+    fill: red !important;
   }
 }
 
@@ -752,4 +742,17 @@ animation-timing-function: linear;
 
 .cloud-back {
   animation: 34s cloud-move-reverse infinite alternate linear;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.flower {
+  animation: 21s spin infinite linear;
 }

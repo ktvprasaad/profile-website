@@ -311,7 +311,7 @@ button:focus,
   max-width: 100%;
   margin-right: 40px;
   border-radius: 50%; /* for rounded image */
-}
+} 
 
 .page-footer {
   clear: both; /* it clears all floats, both right & left */
@@ -356,10 +356,10 @@ button:focus,
   -ms-grid-columns: 1fr 1fr;
   grid-template-columns: 1fr 1fr;
   justify-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  /* justify-content: space-around; */
   padding: 20px;
   margin: 0 auto; /* to center  the profile container */
+  width: 100%;
 }
 
 .contact__grid-item:nth-child(2) {
@@ -378,7 +378,7 @@ button:focus,
 }
 
 .contact__grid-item:nth-child(3) {
-  width: auto;
+  width: 90%;
   -ms-grid-row: 1;
   -ms-grid-row-span: 2;
   -ms-grid-column: 2;
@@ -396,8 +396,8 @@ button:focus,
   -webkit-box-pack: left;
       -ms-flex-pack: left;
           justify-content: left;
-  /* padding-left: 20px;
-  margin-top: 0px; */
+  padding: 20px;
+  /* margin-top: 0px; */
 }
 
 .contact__grid-item a {
@@ -415,17 +415,6 @@ button:focus,
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
-}
-
-.right-col {
-  position: absolute;
-  top: 5em;
-  right: 1.4em;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  background-size: cover;
-  z-index: -1;
 }
 
 .section__grid {
@@ -599,8 +588,7 @@ button:hover {
     border-radius: 50%; /* for rounded image */
   }
 
-  .grid,
-  .contact__grid {
+  .grid {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
   }
@@ -685,11 +673,16 @@ button:hover {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    /* margin: 1em; */
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
   }
 
   .contact__grid h1 {
     text-align: center;
     border: none;
+    /* margin-bottom: em; */
   }
   
   .contact__grid-item a {
@@ -700,10 +693,6 @@ button:hover {
     text-align: center;
     padding: 0;
     margin: 0;
-    /* width: 100%; */
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
   } 
 
   .contact__grid-item:nth-child(2) {
@@ -717,10 +706,8 @@ button:hover {
   .contact__grid-item:nth-child(3) {
     display: unset;
     position: absolute;
-    height: 100vh;
     top: 0;
     left: 0;
-    /* width: 98; */
     z-index: -1;
     opacity: .42;
   }
@@ -847,29 +834,29 @@ button:hover {
 
 @-webkit-keyframes color-change {
   0% {
-    fill: #edc655;
+    fill: black !important;
   }
 
   50% {
-    fill: #fcffad;
+    fill: green !important;
   }
 
   100% {
-    fill: #f76414;
+    fill: red !important;
   }
 }
 
 @keyframes color-change {
   0% {
-    fill: #edc655;
+    fill: black !important;
   }
 
   50% {
-    fill: #fcffad;
+    fill: green !important;
   }
 
   100% {
-    fill: #f76414;
+    fill: red !important;
   }
 }
 
@@ -945,4 +932,31 @@ animation-timing-function: linear;
 .cloud-back {
   -webkit-animation: 34s cloud-move-reverse infinite alternate linear;
           animation: 34s cloud-move-reverse infinite alternate linear;
+}
+
+@-webkit-keyframes spin {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+.flower {
+  -webkit-animation: 21s spin infinite linear;
+          animation: 21s spin infinite linear;
 }
