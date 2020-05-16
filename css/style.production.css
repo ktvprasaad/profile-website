@@ -1,4 +1,9 @@
-/* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.26, autoprefixer: v9.7.3) */
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
 
 /* CSS variable declaration  :root (psuedo class) to target all the elements within the <HTML> */
 
@@ -62,6 +67,7 @@ p {
 a {
   color: #000;
   font-size: large;
+  outline: none;
 }
 
 span {
@@ -134,6 +140,7 @@ a:active {
   padding: 0;
 }
 
+
 #skills div {
   background: tomato;
   list-style: none;
@@ -141,6 +148,8 @@ a:active {
   border-radius: 3%;
   padding: 0;
   margin: 0;
+  -webkit-animation: fadeIn 1s .5s forwards;
+          animation: fadeIn 1s .5s forwards;
 }
 
 .rate {
@@ -446,6 +455,7 @@ button:focus,
   background: ivory;
   padding: 2px 10px;
   border-radius: 1em;
+  margin-bottom: 2px;
 }
 
 .movie {
@@ -619,7 +629,6 @@ button:hover {
     margin: 0;
     padding: 0;
     background: rgba(1,12,61,1) !important;
-    color: tomato !important;
     height: 100vh;
     list-style: none;
     font-weight: bold;
@@ -630,6 +639,7 @@ button:hover {
   
   ul li a {
     display: block;
+    /* color: tomato !important; */
     margin-left: -4em;
     font-weight: normal;
     padding: 0em;
@@ -651,7 +661,7 @@ button:hover {
     right: 2em;
   }
 
-  .navigation-list__item .navigation-list__item--active, a:visited {
+  .main-navigation a, .navigation-list__item .navigation-list__item--active, a:visited {
     color: tomato !important;
   }
 
@@ -953,6 +963,32 @@ animation-timing-function: linear;
   to {
     -webkit-transform: rotate(360deg);
             transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+    -webkit-transform: translateX(-20%);
+            transform: translateX(-20%);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    -webkit-transform: translateX(-20%);
+            transform: translateX(-20%);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
   }
 }
 
